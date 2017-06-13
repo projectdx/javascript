@@ -1181,8 +1181,32 @@ Other Style Guides
     export { foo }
     ```
 
+  <a name="modules--named-export"></a>
+  - [10.6](#modules--named-export) In general, excluding React Component and Reducer files, named exports should be preferred.
+ eslint: [`import/prefer-default-export`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md)
+
+    ```javascript
+    // bad
+    ...
+    export default function foo() {}
+    
+    // good
+    ...
+    export function foo() {} 
+    
+    // also good
+    ...
+    function foo() {}
+    export foo;
+    
+    // also good
+    ...
+    function foo() {}
+    export { foo };
+    ```
+
   <a name="modules--imports-first"></a>
-  - [10.6](#modules--imports-first) Put all `import`s above non-import statements.
+  - [10.7](#modules--imports-first) Put all `import`s above non-import statements.
  eslint: [`import/imports-first`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/imports-first.md)
     > Why? Since `import`s are hoisted, keeping them all at the top prevents surprising behavior.
 
