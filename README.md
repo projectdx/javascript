@@ -1224,7 +1224,7 @@ Other Style Guides
     foo.init();
     ```
 
-  <a name="modules--multline-imports"></a>
+  <a name="modules--multiline-imports"></a>
   - [10.8](#modules--multiline-imports) For multiline imports, put all imports on their own line.
 
   ```javascript
