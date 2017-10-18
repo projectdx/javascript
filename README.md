@@ -1224,6 +1224,23 @@ Other Style Guides
     foo.init();
     ```
 
+  <a name="modules--multline-imports"></a>
+  - [10.8](#modules--multiline-imports) For multiline imports, put all imports on their own line.
+
+  ```javascript
+  //bad
+  import { a, b
+    c, d } from 'module';
+
+  //good
+  import {
+    a,
+    b,
+    c,
+    d,
+  } from 'module';
+  ```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Iterators and Generators
