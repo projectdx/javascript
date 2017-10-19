@@ -1225,7 +1225,7 @@ Other Style Guides
     ```
 
   <a name="modules--multiline-imports"></a>
-  - [10.8](#modules--multiline-imports) For multiline imports, put all imports on their own line.
+  - [10.8](#modules--multiline-imports) For imports that don't fit in one line, put all imports on their own line. If imports fit in one line, they can stay in one line.
 
   ```javascript
   //bad
@@ -1239,6 +1239,9 @@ Other Style Guides
     c,
     d,
   } from 'module';
+
+  //good
+  import { a, b } from 'module';
   ```
 
 **[⬆ back to top](#table-of-contents)**
